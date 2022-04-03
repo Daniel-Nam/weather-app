@@ -59,10 +59,11 @@ h6 {
 	border-radius: 6px;
 	box-shadow: 1rem 1rem 2rem #ccc;
 	background-color: #0ea5e9;
-	color: #f1f1f1;
+	color: #fff;
 }
 
 .search {
+	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -72,9 +73,22 @@ h6 {
 .search input {
 	flex: auto;
     background-color: transparent;
-    color: #f1f1f1;
-    padding: 4px 12px; 
-    border-bottom: 2px solid #f1f1f1;
+    color: #fff;
+    padding: 6px 12px; 
+}
+
+.search-line {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 2px;
+	width: 0;
+	background-color: #fff;
+	transition: width .2s linear;
+}
+
+.search input:focus + .search-line {
+	width: 85%;
 }
 
 .search-btn {
@@ -91,7 +105,7 @@ h6 {
 }
 
 .search-btn:hover {
-	background-color: #f3f3f3;
+	background-color: #e0d4d4;
 }
 
 .weather {
