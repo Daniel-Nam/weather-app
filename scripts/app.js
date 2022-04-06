@@ -14,42 +14,18 @@ searchBtn.addEventListener('click', () => {
 			$('.weather-heading').textContent =
 				data.location.name + ' - ' + data.location.country
 			$('.weather-desc').textContent = data.current.condition.text
-			$('.weather-temp').textContent =
-				data.current.temp_c + '°C' + ' / ' + data.current.temp_f + '°F'
+			$('.weather-temp').textContent = data.current.temp_c + '°C'
 			$('.weather-humidity p').textContent = data.current.humidity + '%'
 			$('.weather-wind-speed p').textContent =
-				data.current.wind_kph +
-				' km/h' +
-				' - ' +
-				data.current.wind_mph +
-				' mph'
-			$('.weather-gust p').textContent =
-				data.current.wind_kph +
-				' km/h' +
-				' - ' +
-				data.current.wind_mph +
-				'mph'
-			$('.weather-vis p').textContent =
-				data.current.vis_km +
-				' km' +
-				' - ' +
-				data.current.vis_miles +
-				' miles'
+				data.current.wind_kph + ' km/h'
+			$('.weather-gust p').textContent = data.current.wind_kph + ' km/h'
+			$('.weather-vis p').textContent = data.current.vis_km + ' km'
 			$('.weather-wind-degree p').textContent =
 				data.current.wind_degree + '°'
 			$('.weather-wind-dir p').textContent = data.current.wind_dir
 			$('.weather-pressure p').textContent =
-				data.current.pressure_mb +
-				' mb' +
-				' - ' +
-				data.current.pressure_in +
-				' in'
-			$('.weather-precip p').textContent =
-				data.current.precip_mm +
-				' mm' +
-				' - ' +
-				data.current.precip_in +
-				' in'
+				data.current.pressure_mb + ' mb'
+			$('.weather-precip p').textContent = data.current.precip_mm + ' mm'
 			$('.weather-last-updated p').textContent = data.current.last_updated
 		})
 		.catch((err) => err)

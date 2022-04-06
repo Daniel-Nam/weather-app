@@ -54,7 +54,7 @@ h6 {
 .app {
 	min-width: 360px;
 	max-width: 650px;
-	padding: 1.5rem 2rem;
+	padding: 1rem 1.5rem;
 	min-height: 400px;
 	border-radius: 6px;
 	box-shadow: 1rem 1rem 2rem #ccc;
@@ -67,14 +67,14 @@ h6 {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: 3rem;
+	margin-bottom: 2rem;
 }
 
 .search input {
 	flex: auto;
-    background-color: transparent;
-    color: #fff;
-    padding: 6px 12px; 
+	background-color: transparent;
+	color: #fff;
+	padding: 6px 12px;
 }
 
 .search-line {
@@ -84,7 +84,7 @@ h6 {
 	height: 2px;
 	width: 0;
 	background-color: #fff;
-	transition: width .2s linear;
+	transition: width 0.2s linear;
 }
 
 .search input:focus + .search-line {
@@ -92,15 +92,15 @@ h6 {
 }
 
 .search-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    margin-left: 1rem;
-    cursor: pointer;
-    background-color: #fff;
-    border-radius: 6px;
-    color: #101010;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	margin-left: 1rem;
+	cursor: pointer;
+	background-color: #fff;
+	border-radius: 6px;
+	color: #101010;
 	transition: background-color 0.2s ease-in-out;
 }
 
@@ -120,16 +120,16 @@ h6 {
 }
 
 .weather-detail {
-    margin-top: 3rem;
+	margin-top: 2rem;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
+	grid-gap: 10px;
 }
 
 .weather-detail div h4 {
-    text-transform: capitalize;
+	text-transform: capitalize;
 }
 
 .weather-detail div {
-    padding: 8px;
+	padding: 10px;
 }
